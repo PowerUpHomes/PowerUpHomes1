@@ -418,13 +418,13 @@
 </nav>
 
 <section class="hero">
-  <div class="rebate-badge">Victorian Energy Upgrades Program</div>
-  <h1>Claim Your Victorian Aircon <em>Rebate</em> — And Get Quotes From Trusted Local Installers</h1>
-  <p>Eligible Melbourne homeowners can access government rebates on split system installation. We connect you with VEU-registered local installers who handle the paperwork.</p>
+  <div class="rebate-badge">VEU Rebates Available Now — Melbourne Only</div>
+  <h1>Melbourne Homeowners: Get a Government <em>Rebate</em> on Your Split System Installation</h1>
+  <p>Victorian Energy Upgrades rebates are available on eligible reverse cycle split systems — but only through VEU-registered installers. We connect homeowners across Melbourne's east, south, and inner north with accredited local installers who handle the paperwork at no cost to you.</p>
   <div class="trust-row">
-    <div class="trust-item"><span class="check"></span>100% free to homeowners</div>
-    <div class="trust-item"><span class="check"></span>VEU-registered installers only</div>
-    <div class="trust-item"><span class="check"></span>No obligation to proceed</div>
+    <div class="trust-item"><span class="check"></span>Free to homeowners — always</div>
+    <div class="trust-item"><span class="check"></span>VEU-accredited installers only</div>
+    <div class="trust-item"><span class="check"></span>No lock-in, no obligation</div>
   </div>
 </section>
 
@@ -502,7 +502,7 @@
         </select>
       </div>
 
-      <button type="submit" class="submit-btn" id="submitBtn">Request Quotes Now →</button>
+      <button type="submit" class="submit-btn" id="submitBtn">Check My Rebate Eligibility →</button>
       <p class="form-footer-note">Your information is never sold or shared with third parties outside of matching you with local installers.</p>
     </form>
 
@@ -606,6 +606,7 @@
         form.style.display = 'none';
         successState.style.display = 'block';
         window.scrollTo({ top: document.querySelector('.form-card').offsetTop - 20, behavior: 'smooth' });
+        gtag('event', 'conversion', {'send_to': 'AW-18122832098/xSADCPz8p6McEOLx0cFD', 'value': 1.0, 'currency': 'AUD'});
       } else {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Request Quotes Now →';
